@@ -21,7 +21,7 @@ cc.Class({
         let physicsManager = cc.director.getPhysicsManager();
         physicsManager.enabled = true;
         physicsManager._world.SetGravity(this.gravity);
-        if(this.debug){
+        if(!this.debug){
             physicsManager.debugDrawFlags = 
                 // 0;
                 // cc.PhysicsManager.DrawBits.e_aabbBit |
